@@ -1,0 +1,19 @@
+.vscode/
+
+
+*.exe
+
+# Ignore compiled object files
+*.o
+*.obj
+
+# Ignore data files
+*.dat
+
+# Ignore temporary / backup files
+*.tmp
+*.log
+*.bak
+
+*/input.txt
+*/output.txt
