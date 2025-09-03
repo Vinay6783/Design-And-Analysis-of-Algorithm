@@ -9,14 +9,19 @@ void dualPivotPartition(vector<int>& a, int low, int high, int &lp, int &rp)
     int lt = low + 1, gt = high - 1, i = lt;
     while (i <= gt) 
     {
-        if (a[i] < p) swap(a[i++], a[lt++]);
-        else if (a[i] > q) swap(a[i], a[gt--]);
-        else i++;
+        if (a[i] < p) 
+            swap(a[i++], a[lt++]);
+        else if (a[i] > q) 
+            swap(a[i], a[gt--]);
+        else 
+            i++;
     }
-    lt--; gt++;
+    lt--; 
+    gt++;
     swap(a[low], a[lt]);
     swap(a[high], a[gt]);
-    lp = lt; rp = gt;
+    lp = lt; 
+    rp = gt;
 }
 void dualPivotQuickSort(vector<int>& a, int low, int high)
 {
